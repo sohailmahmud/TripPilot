@@ -1,0 +1,444 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1177744648965105105",
+      "lastPropertyId": "20:7461268415209189369",
+      "name": "ActivityEntity",
+      "properties": [
+        {
+          "id": "1:8778573185472787521",
+          "name": "obId",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4719042315109416006",
+          "name": "id",
+          "indexId": "1:7522082869226596497",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "4:8756660519665580926",
+          "name": "category",
+          "indexId": "2:1396078899304996528",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "5:3257976015480699967",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "6:2286503921366683063",
+          "name": "rating",
+          "type": 8
+        },
+        {
+          "id": "7:6739631771871497563",
+          "name": "price",
+          "type": 8
+        },
+        {
+          "id": "10:7596834490243837588",
+          "name": "imageUrl",
+          "type": 9
+        },
+        {
+          "id": "12:1992361276795275736",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "13:1238615804383927996",
+          "name": "locationLat",
+          "type": 8
+        },
+        {
+          "id": "14:310613890271212786",
+          "name": "locationLng",
+          "type": 8
+        },
+        {
+          "id": "15:2402519268050837384",
+          "name": "locationCity",
+          "type": 9
+        },
+        {
+          "id": "16:2914608329016245872",
+          "name": "locationCountry",
+          "type": 9
+        },
+        {
+          "id": "17:8902364065295894646",
+          "name": "locationAddress",
+          "type": 9
+        },
+        {
+          "id": "18:1254822379872644137",
+          "name": "currency",
+          "type": 9
+        },
+        {
+          "id": "19:629904717446175662",
+          "name": "bookingUrl",
+          "type": 9
+        },
+        {
+          "id": "20:7461268415209189369",
+          "name": "duration",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:439500610461656578",
+      "lastPropertyId": "22:7424731035771837360",
+      "name": "FlightEntity",
+      "properties": [
+        {
+          "id": "1:7995408394231881418",
+          "name": "obId",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:245841516169853154",
+          "name": "id",
+          "indexId": "3:3962381625223895775",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "3:7639639452830714420",
+          "name": "departureCity",
+          "type": 9
+        },
+        {
+          "id": "4:5145104778837089939",
+          "name": "arrivalCity",
+          "type": 9
+        },
+        {
+          "id": "5:3977179447163624261",
+          "name": "departureTime",
+          "type": 10
+        },
+        {
+          "id": "6:3760929323790350302",
+          "name": "arrivalTime",
+          "type": 10
+        },
+        {
+          "id": "7:2427098819330120203",
+          "name": "airline",
+          "type": 9
+        },
+        {
+          "id": "8:8641096524469099735",
+          "name": "flightNumber",
+          "type": 9
+        },
+        {
+          "id": "9:1094857642960131131",
+          "name": "price",
+          "type": 8
+        },
+        {
+          "id": "10:3063338003980470536",
+          "name": "duration",
+          "type": 6
+        },
+        {
+          "id": "12:6080464898868309150",
+          "name": "departureCountry",
+          "type": 9
+        },
+        {
+          "id": "13:1224184235947936808",
+          "name": "arrivalCountry",
+          "type": 9
+        },
+        {
+          "id": "14:6152524373338742497",
+          "name": "departureLat",
+          "type": 8
+        },
+        {
+          "id": "15:427195408208592780",
+          "name": "departureLng",
+          "type": 8
+        },
+        {
+          "id": "16:180178431754849293",
+          "name": "arrivalLat",
+          "type": 8
+        },
+        {
+          "id": "17:8540234879602188945",
+          "name": "arrivalLng",
+          "type": 8
+        },
+        {
+          "id": "18:7371038362405728727",
+          "name": "currency",
+          "type": 9
+        },
+        {
+          "id": "20:197649080309652923",
+          "name": "departureAddress",
+          "type": 9
+        },
+        {
+          "id": "21:8438913456189543822",
+          "name": "arrivalAddress",
+          "type": 9
+        },
+        {
+          "id": "22:7424731035771837360",
+          "name": "bookingUrl",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5530193129808549760",
+      "lastPropertyId": "20:7157188039317842283",
+      "name": "HotelEntity",
+      "properties": [
+        {
+          "id": "1:676950049499059522",
+          "name": "obId",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:783406188880043578",
+          "name": "id",
+          "indexId": "4:1841845370702993087",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "3:3956169394236615464",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:7225378485096539889",
+          "name": "locationCity",
+          "type": 9
+        },
+        {
+          "id": "5:999938264386687520",
+          "name": "locationCountry",
+          "type": 9
+        },
+        {
+          "id": "7:1178598269793947819",
+          "name": "pricePerNight",
+          "type": 8
+        },
+        {
+          "id": "8:301310274451217192",
+          "name": "rating",
+          "type": 8
+        },
+        {
+          "id": "11:5935809462688905894",
+          "name": "imageUrl",
+          "type": 9
+        },
+        {
+          "id": "13:5243447832368914700",
+          "name": "locationLat",
+          "type": 8
+        },
+        {
+          "id": "14:4855197630061792073",
+          "name": "locationLng",
+          "type": 8
+        },
+        {
+          "id": "15:5390324021009779286",
+          "name": "locationAddress",
+          "type": 9
+        },
+        {
+          "id": "16:7278549921212330588",
+          "name": "reviewCount",
+          "type": 6
+        },
+        {
+          "id": "17:2204863057993176357",
+          "name": "currency",
+          "type": 9
+        },
+        {
+          "id": "18:9160797143189118113",
+          "name": "amenitiesJson",
+          "type": 9
+        },
+        {
+          "id": "19:1346485467024991966",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "20:7157188039317842283",
+          "name": "bookingUrl",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:7523196917833823992",
+      "lastPropertyId": "21:3850833962395947546",
+      "name": "TripEntity",
+      "properties": [
+        {
+          "id": "1:6182459024848328067",
+          "name": "obId",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5677892199470614175",
+          "name": "id",
+          "indexId": "6:7936909492237569737",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "3:6484072496346271131",
+          "name": "userId",
+          "indexId": "7:4898886470961329948",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "4:6051730051809878296",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "5:1780293688210280093",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "6:7550100048141962050",
+          "name": "destination",
+          "type": 9
+        },
+        {
+          "id": "7:4279592102739015424",
+          "name": "startDate",
+          "type": 10
+        },
+        {
+          "id": "8:322776346779254467",
+          "name": "endDate",
+          "type": 10
+        },
+        {
+          "id": "9:8561535552782112758",
+          "name": "destinationsJson",
+          "type": 9
+        },
+        {
+          "id": "10:587228651891135154",
+          "name": "outboundFlightJson",
+          "type": 9
+        },
+        {
+          "id": "11:5141915203813540591",
+          "name": "returnFlightJson",
+          "type": 9
+        },
+        {
+          "id": "12:9221081432676984011",
+          "name": "hotelsJson",
+          "type": 9
+        },
+        {
+          "id": "13:269151628929529783",
+          "name": "activitiesJson",
+          "type": 9
+        },
+        {
+          "id": "14:5697978856421254223",
+          "name": "itineraryJson",
+          "type": 9
+        },
+        {
+          "id": "15:5548436890415307865",
+          "name": "budgetJson",
+          "type": 9
+        },
+        {
+          "id": "16:4206467204540054792",
+          "name": "status",
+          "type": 9
+        },
+        {
+          "id": "17:6456835929916875157",
+          "name": "numberOfPeople",
+          "type": 6
+        },
+        {
+          "id": "18:4982628142004116468",
+          "name": "coverImageUrl",
+          "type": 9
+        },
+        {
+          "id": "19:8751761396668995264",
+          "name": "tagsJson",
+          "type": 9
+        },
+        {
+          "id": "20:8477779489060880572",
+          "name": "createdAt",
+          "type": 10
+        },
+        {
+          "id": "21:3850833962395947546",
+          "name": "updatedAt",
+          "type": 10
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:7523196917833823992",
+  "lastIndexId": "7:4898886470961329948",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [
+    4439324196752511960
+  ],
+  "retiredPropertyUids": [
+    2548055212301095521,
+    7582911451408340119,
+    3413554608561557053,
+    7477183441675183218,
+    8779893068996924299,
+    4854991665655760362,
+    9173206138200804895,
+    7820877097142233230,
+    7161266595123402486,
+    6669697208199640247
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}
