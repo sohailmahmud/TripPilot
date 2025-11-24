@@ -1,8 +1,8 @@
-# Trip Pilot 🌍✈️
+# TripPilot 🌍✈️
 
 **Your AI-Powered Travel Planning Companion**
 
-Trip Pilot is a feature-rich Flutter mobile application that revolutionizes travel planning by combining intelligent search capabilities, AI-powered recommendations, budget optimization, and seamless trip management.
+TripPilot is a feature-rich Flutter mobile application that revolutionizes travel planning by combining intelligent search capabilities, AI-powered recommendations, budget optimization, and seamless trip management.
 
 ---
 
@@ -63,7 +63,7 @@ Trip Pilot is a feature-rich Flutter mobile application that revolutionizes trav
 
 ## 🏗️ Architecture
 
-Trip Pilot follows **Clean Architecture** principles with a clear separation of concerns:
+TripPilot follows **Clean Architecture** principles with a clear separation of concerns:
 
 ```
 Domain Layer (Business Logic)
@@ -195,8 +195,8 @@ test/                           # Unit & widget tests
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/hurraayy/trip_pilot.git
-   cd trip_pilot
+   git clone https://github.com/sohailmahmud/TripPilot.git
+   cd TripPilot
    ```
 
 2. **Install dependencies**
@@ -414,7 +414,7 @@ await LocalDatabase.initialize();
 
 ## 🎯 State Management
 
-Trip Pilot uses **BLoC (Business Logic Component)** pattern for state management.
+TripPilot uses **BLoC (Business Logic Component)** pattern for state management.
 
 ### BLoC Structure:
 
