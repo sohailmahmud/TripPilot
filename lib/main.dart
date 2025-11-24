@@ -13,6 +13,7 @@ import 'package:trip_pilot/presentation/bloc/navigation/navigation_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/recommendations/recommendations_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/search/search_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/trip/trip_bloc.dart';
+import 'injection_container.dart' as openai_container;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +34,14 @@ void main() async {
     await SupabaseConfig.initialize();
   } catch (e) {
     AppLogger.error('Failed to initialize Supabase', error: e);
+  }
+
+  // Initialize OpenAI Services
+  try {
+    openai_container.setupOpenAIServices();
+    AppLogger.info('OpenAI services initialized successfully');
+  } catch (e) {
+    AppLogger.error('Failed to initialize OpenAI services', error: e);
   }
   
   setupServiceLocator();

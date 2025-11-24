@@ -2,7 +2,6 @@ import 'package:get_it/get_it.dart';
 import 'package:trip_pilot/core/config/supabase_config.dart';
 import 'package:trip_pilot/data/datasources/remote/amadeus_flight_service.dart';
 import 'package:trip_pilot/data/datasources/remote/amadeus_activities_service.dart';
-import 'package:trip_pilot/data/datasources/remote/ai_recommendation_service.dart';
 import 'package:trip_pilot/data/datasources/remote/flight_search_service.dart';
 import 'package:trip_pilot/data/datasources/remote/amadeus_hotel_service.dart';
 import 'package:trip_pilot/data/datasources/remote/hotel_search_service.dart';
@@ -10,7 +9,6 @@ import 'package:trip_pilot/data/datasources/remote/supabase_auth_service.dart';
 import 'package:trip_pilot/data/datasources/remote/supabase_trips_service.dart';
 import 'package:trip_pilot/data/repositories/auth_repository_impl.dart';
 import 'package:trip_pilot/data/repositories/trip_repository_impl.dart';
-import 'package:trip_pilot/domain/repositories/ai_recommendation_service.dart';
 import 'package:trip_pilot/domain/repositories/auth_repository.dart';
 import 'package:trip_pilot/domain/repositories/flight_search_service.dart';
 import 'package:trip_pilot/domain/repositories/hotel_search_service.dart';
@@ -19,7 +17,6 @@ import 'package:trip_pilot/domain/repositories/trip_repository.dart';
 import 'package:trip_pilot/presentation/bloc/auth/auth_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/budget/budget_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/navigation/navigation_bloc.dart';
-import 'package:trip_pilot/presentation/bloc/recommendations/recommendations_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/search/search_bloc.dart';
 import 'package:trip_pilot/presentation/bloc/trip/trip_bloc.dart';
 import 'package:trip_pilot/data/datasources/remote/activity_search_service.dart' as remote_activity;
@@ -89,11 +86,6 @@ void setupServiceLocator() {
     ),
   );
 
-  // AI Service
-  getIt.registerSingleton<AIRecommendationService>(
-    AIRecommendationServiceImpl(),
-  );
-
   // Repositories
   getIt.registerSingleton<AuthRepository>(
     AuthRepositoryImpl(authService: getIt<SupabaseAuthService>()),
@@ -118,10 +110,6 @@ void setupServiceLocator() {
       hotelSearchService: getIt<HotelSearchService>(),
       activitySearchService: getIt<ActivitySearchService>(),
     ),
-  );
-
-  getIt.registerSingleton<RecommendationBloc>(
-    RecommendationBloc(aiService: getIt<AIRecommendationService>()),
   );
 
   getIt.registerSingleton<BudgetBloc>(

@@ -96,12 +96,17 @@ class _BudgetTrackerScreenState extends State<BudgetTrackerScreen> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.successLight,
+                    backgroundColor: AppColors.primaryAccentLight,
                     minimumSize: const Size(double.infinity, 48),
+                    elevation: 4,
+                    shadowColor: AppColors.primaryAccentLight.withValues(alpha: 150)
                   ),
                   child: Text(
                     'Optimize Budget',
-                    style: AppFonts.labelLarge().copyWith(color: Colors.white),
+                    style: AppFonts.labelLarge().copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),
@@ -226,12 +231,18 @@ class _BudgetTrackerScreenState extends State<BudgetTrackerScreen> {
                         );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.warningLight,
+                    backgroundColor: AppColors.textPrimaryDark,
                     minimumSize: const Size(double.infinity, 48),
+                    side: BorderSide(color: AppColors.textTertiaryLight),
+                    elevation: 4,
+                    shadowColor: AppColors.tertiaryLight.withValues(alpha: 0.5),
                   ),
                   child: Text(
                     'Find Deals',
-                    style: AppFonts.labelLarge().copyWith(color: Colors.white),
+                    style: AppFonts.labelLarge().copyWith(
+                      color: AppColors.textSecondaryLight,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),

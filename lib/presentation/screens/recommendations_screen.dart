@@ -95,12 +95,17 @@ class _RecommendationsScreenState extends State<RecommendationsScreen> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.warningLight,
+                    backgroundColor: AppColors.primaryAccentLight,
                     minimumSize: const Size(double.infinity, 48),
+                    elevation: 4,
+                    shadowColor: AppColors.primaryAccentLight,
                   ),
                   child: Text(
                     'Get Recommendations',
-                    style: AppFonts.labelLarge().copyWith(color: Colors.white),
+                    style: AppFonts.labelLarge().copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ),
               ),
