@@ -15,9 +15,9 @@ abstract class AppException implements Exception {
 /// Exception for network-related errors
 class NetworkException extends AppException {
   NetworkException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Exception for server/API errors
@@ -25,48 +25,48 @@ class ServerException extends AppException {
   final int statusCode;
 
   ServerException({
-    required String message,
-    String? code,
+    required super.message,
+    super.code,
     this.statusCode = 500,
-  }) : super(message: message, code: code);
+  });
 }
 
 /// Exception for local storage errors
 class CacheException extends AppException {
   CacheException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Exception for authentication errors
 class AuthException extends AppException {
   AuthException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Exception for validation errors
 class ValidationException extends AppException {
   ValidationException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Exception for not found errors
 class NotFoundException extends AppException {
   NotFoundException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Exception for timeout errors
 class TimeoutException extends AppException {
   TimeoutException({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }

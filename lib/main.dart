@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:trip_pilot/core/configs/supabase_config.dart';
+import 'package:trip_pilot/core/config/supabase_config.dart';
 import 'package:trip_pilot/core/theme/app_theme.dart';
 import 'package:trip_pilot/core/utils/injection_container.dart';
 import 'package:trip_pilot/core/utils/logger_util.dart';

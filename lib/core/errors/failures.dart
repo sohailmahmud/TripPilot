@@ -15,9 +15,9 @@ abstract class Failure {
 /// Network failure
 class NetworkFailure extends Failure {
   NetworkFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Server/API failure
@@ -25,56 +25,56 @@ class ServerFailure extends Failure {
   final int statusCode;
 
   ServerFailure({
-    required String message,
-    String? code,
+    required super.message,
+    super.code,
     this.statusCode = 500,
-  }) : super(message: message, code: code);
+  });
 }
 
 /// Cache/Local storage failure
 class CacheFailure extends Failure {
   CacheFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Authentication failure
 class AuthFailure extends Failure {
   AuthFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Validation failure
 class ValidationFailure extends Failure {
   ValidationFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Not found failure
 class NotFoundFailure extends Failure {
   NotFoundFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Timeout failure
 class TimeoutFailure extends Failure {
   TimeoutFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
 
 /// Unknown failure
 class UnknownFailure extends Failure {
   UnknownFailure({
-    required String message,
-    String? code,
-  }) : super(message: message, code: code);
+    required super.message,
+    super.code,
+  });
 }
